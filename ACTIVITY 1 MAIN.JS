@@ -1,0 +1,15 @@
+function updateScore()
+{
+    score = score + 1;
+    document.getElementById("score").innerHTML = "score:" +score;
+}
+
+function saveScore()
+{
+    localStorage.setItem("score",score);
+}
+
+function send()
+{
+    window.location = "activity_1.html";
+}
